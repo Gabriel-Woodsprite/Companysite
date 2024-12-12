@@ -1,0 +1,22 @@
+:root {
+	--backgroundColor: #100f17;
+	--baseColor: #ebebeb;
+}
+
+html {
+	background: var(--backgroundColor);
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}

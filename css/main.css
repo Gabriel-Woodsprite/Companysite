@@ -1,0 +1,65 @@
+/* INFO MUSICA */
+.rowContainer {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 5rem;
+	padding: 2rem;
+}
+.rightHalf,
+.leftHalf {
+	flex: 1;
+}
+.secondImage,
+.thirdImage {
+	flex: 1;
+}
+.row2 {
+	flex: 1.2;
+}
+.title {
+	max-width: 100%;
+	height: 12rem;
+	padding: 1rem;
+	margin: 0 0 1rem 0;
+	border-radius: 12px;
+	background: linear-gradient(145deg, #0e0e15, #111019);
+	box-shadow: 7px 7px 12px #0b0a10, -7px -7px 12px #15141e;
+}
+.imageColumn {
+	display: flex;
+}
+.secondImage {
+	width: 65%;
+	margin-right: 0.5rem;
+}
+.border {
+	border-radius: 0.7rem;
+}
+
+.educative {
+	color: black;
+	background-color: var(--baseColor);
+	margin-top: 5rem;
+}
+
+.title2 {
+	max-width: 100%;
+	height: 12rem;
+	padding: 1rem;
+	margin: 0 0 1rem 0;
+	border-radius: 12px;
+	background: linear-gradient(145deg, #d4d4d4, #fbfbfb);
+	box-shadow: 7px 7px 12px #a0a0a0, -7px -7px 12px #ffffff;
+}
+
+/* INFO EDUCACIÓN */
+.educative__row1 {
+	flex: 1.2;
+}
+.educative__imgContainer {
+	display: flex;
+	gap: 0.7rem;
+}
+.educative__imgContainer .imageColumn {
+	display: block;
+}

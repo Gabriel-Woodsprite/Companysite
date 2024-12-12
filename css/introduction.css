@@ -1,0 +1,61 @@
+/* Introduction Container */
+.introduction {
+	position: relative; /* Makes this the containing block for .background */
+	width: 100%;
+	height: 70vh; /* Full height of the viewport for demonstration */
+	overflow: hidden; /* Prevent spans from overflowing outside the div */
+	background: #282c34; /* Optional background color */
+}
+
+.textContainer {
+	position: relative;
+	z-index: 100;
+	text-align: center; /* Center-align the text */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Fill the entire height of the container */
+	padding: 2rem;
+}
+
+/* Background Animations */
+.background {
+	position: absolute; /* Contained within .introduction */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #100f17; /* Optional background color */
+}
+
+.css-selector {
+	background: linear-gradient(138deg, #2a134a, #2a134a, #100f17, #100f17);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 19s ease-in-out infinite;
+	animation: AnimationName 19s ease-in-out infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 52% 0%;
+	}
+	50% {
+		background-position: 49% 100%;
+	}
+	100% {
+		background-position: 52% 0%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 52% 0%;
+	}
+	50% {
+		background-position: 49% 100%;
+	}
+	100% {
+		background-position: 52% 0%;
+	}
+}

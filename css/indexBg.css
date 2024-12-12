@@ -1,0 +1,42 @@
+.indexBody {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	overflow: hidden;
+}
+
+.indexBg {
+	position: relative;
+	height: calc(100vh - 150px); /* Adjust height to fit nav and footer */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0; /* Ensures this is below the nav and footer */
+	overflow: hidden;
+}
+
+.indexBg h1 {
+	font-size: 4rem;
+	color: white;
+	text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	position: relative;
+}
+
+.gradient-follow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.8),
+		rgba(0, 128, 255, 0.3)
+	);
+	pointer-events: none; /* Avoid interfering with mouse events */
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	transition: transform 0.05s ease-out;
+}

@@ -1,0 +1,89 @@
+/* Estilos generales para todos los dispositivos */
+html {
+	font-size: 62.5%; /* Base para cálculos rem */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	background: var(--backgroundColor);
+	color: var(--baseColor);
+}
+
+/* ===== Media Queries ===== */
+
+/* Pantallas pequeñas (smartphones, menos de 768px) */
+@media (max-width: 768px) {
+	.nav,
+	footer {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.links {
+		width: 100%;
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+	.login {
+		margin: 0;
+		text-align: center;
+	}
+
+	.rowContainer {
+		flex-direction: column;
+		gap: 2rem;
+		padding: 1rem;
+	}
+	.rightHalf,
+	.leftHalf {
+		flex: unset;
+		width: 100%;
+	}
+	.title {
+		height: auto;
+		padding: 1rem;
+	}
+
+	.slider-container {
+		margin: 20px 0;
+	}
+
+	.slider-item {
+		flex: 0 0 70%; /* Ocupa un 70% del ancho */
+	}
+}
+
+/* Pantallas medianas (tablets y pantallas medianas, 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.links {
+		width: auto;
+		margin-left: 0.5rem;
+	}
+
+	.rowContainer {
+		gap: 1.5rem;
+		padding: 1.5rem;
+	}
+
+	.slider-item {
+		flex: 0 0 200px;
+	}
+}
+
+/* Pantallas grandes (escritorios y pantallas grandes, más de 1024px) */
+@media (min-width: 1024px) {
+	.nav {
+		justify-content: space-between;
+	}
+
+	.links {
+		width: 40rem;
+		margin-left: 1rem;
+	}
+
+	.rowContainer {
+		gap: 2rem;
+	}
+}
